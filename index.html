@@ -2,153 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CodeWithPurpose.ai</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f9f6;
-      color: #1f1f1f;
-    }
-    header {
-      background-color: #084c61;
-      color: #ffffff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    h2 {
-      color: #084c61;
-    }
-    .cta {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #07a18c;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .plans {
-      display: grid;
-      gap: 1.5rem;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-    .plan {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 1.5rem;
-      background: #fff;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #084c61;
-      color: white;
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CodeWithPurpose.ai – ML Services for All</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div style="text-align: center; margin-top: 20px;">
-  <img src="logo.png.png" alt="Code With Purpose Logo" width="200">
-  <h1>Code With Purpose</h1>
-  <p>Let’s Grow Together</p>
-</div>
 
   <header>
-    <h1>Code With Purpose. Build With Heart.</h1>
-    <p>Data analytics & machine learning for creators, startups, and eco missions.</p>
-    <a href="#contact" class="cta">Let's Get Started</a>
+    <h1>CodeWithPurpose.ai</h1>
+    <p>Affordable ML, AI & Data Services for Everyone</p>
+    <nav>
+      <a href="#services">Services</a> |
+      <a href="#plans">Plans</a> |
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>What We Do</h2>
-    <p>
-      We help you clean, analyze, and predict with your data — simply and purposefully. Whether you're a content creator,
-      startup, or NGO, we turn raw data into useful insights.
-    </p>
-    <ul>
-      <li>✅ Data Cleaning</li>
-      <li>✅ Dashboard Creation</li>
-      <li>✅ Report Automation</li>
-      <li>✅ Machine Learning Models (Sales prediction, customer segmentation, more)</li>
-      <li>✅ Strategy + Insights</li>
-      <li>✅ Eco Support Plans (Free or 50% off for nature-based missions)</li>
-    </ul>
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <a class="cta" href="request.html?service=datacleaning">Data Cleaning</a>
+      <a class="cta" href="request.html?service=webscraping">Web Scraping</a>
+      <a class="cta" href="request.html?service=dashboard">Dashboard Creation</a>
+      <a class="cta" href="request.html?service=visualization">Data Visualization</a>
+      <a class="cta" href="request.html?service=mlmodels">ML Model Building</a>
+      <a class="cta" href="request.html?service=emailcleanup">Email Cleanup</a>
+      <a class="cta" href="request.html?service=exceltopowerbi">Excel → Power BI</a>
+      <a class="cta" href="request.html?service=eco-webscraping">Eco-Business Web Scraping</a>
+      <a class="cta" href="request.html?service=custom">Custom Package</a>
+      <a class="cta" href="request.html?service=eco-discount">Eco-Startup Discount 💚</a>
+    </div>
   </section>
 
-  <section>
-    <h2>Plans</h2>
+  <section id="plans">
+    <h2>Pricing Plans</h2>
     <div class="plans">
       <div class="plan">
         <h3>Starter</h3>
-        <p>For small projects or creators just starting out.</p>
-        <p><strong>₹999/month</strong></p>
+        <p>₹999 – ₹1,999</p>
+        <p>Basic data tasks or email cleanup</p>
       </div>
       <div class="plan">
         <h3>Growth</h3>
-        <p>For teams and startups that need serious insights.</p>
-        <p><strong>₹2,499/month</strong></p>
+        <p>₹2,000 – ₹4,999</p>
+        <p>Scraping, dashboards, simple ML</p>
       </div>
       <div class="plan">
-        <h3>Unlimited</h3>
-        <p>Everything. Unlimited. Full support, all features.</p>
-        <p><strong>₹4,999/month</strong></p>
-      </div>
-      <div class="plan">
-        <h3>Custom</h3>
-        <p>You tell us what you need — we build a plan for it.</p>
-        <p><strong>Starts at ₹1,999</strong></p>
+        <h3>Pro</h3>
+        <p>₹5,000+</p>
+        <p>Advanced ML, AI automation, large projects</p>
       </div>
     </div>
   </section>
-<section id="services" style="padding: 2em; background-color: #f9f9f9;">
-  <h2 style="text-align:center; color: #2c3e50;">Our Services</h2>
-  <ul style="max-width: 600px; margin: auto; font-size: 18px; line-height: 1.6;">
-    <li>✔️ Data Cleaning (Excel, CSV, Google Sheets)</li>
-    <li>✔️ Web Scraping & Automation</li>
-    <li>✔️ Dashboard Creation (Power BI, Tableau)</li>
-    <li>✔️ Data Visualization</li>
-    <li>✔️ Machine Learning & Model Building</li>
-    <li>✔️ Email List Cleanup</li>
-    <li>✔️ Excel to Power BI Migration</li>
-    <li>✔️ Web Scraping for Eco-Friendly Businesses</li>
-    <li>✔️ Custom Packages Available</li>
-    <li>🏷️ Special Discounts for Eco-Businesses</li>
-  </ul>
-</section>
-  <section>
-    <h2>About Us</h2>
-    <p>
-      I'm Ashutosh, a BCA graduate and the founder of CodeWithPurpose.ai. I started this mission to support individuals
-      and organizations who want to grow with clarity, not chaos — and to build solutions that also respect and serve
-      nature.
-    </p>
-  </section>
 
   <section id="contact">
-    <h2>Let’s Work Together</h2>
-    <p>Have a project? Need a dashboard? Want to try a model? Let's connect.</p>
-    <a class="cta" href="mailto:codewithpurpose.ai@gmail.com">Send Us a Message</a>
-  </section>
+  <h2>Let’s Work Together</h2>
+  <p>Have a project? Need a dashboard? Want to try a model? Let's connect.</p>
+  <p><strong>Email:</strong> <a href="mailto:codewithpurpose.ai@gmail.com">codewithpurpose.ai@gmail.com</a></p>
+  <p><strong>Phone:</strong> <a href="tel:+91XXXXXXXXXX">+917390984955</a></p>
+</section>
+
 
   <footer>
     <p>🌱 We support eco-startups and NGOs. 1% for Earth. 100% for impact.</p>
     <p>&copy; 2025 CodeWithPurpose.ai – Built by Ashutosh with heart.</p>
   </footer>
+
 </body>
 </html>
