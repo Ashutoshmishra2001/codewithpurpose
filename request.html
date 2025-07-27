@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Request Service | CodeWithPurpose.ai</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1 id="serviceTitle">Request a Service</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="index.html#services">Services</a> |
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <form action="https://formspree.io/f/your-form-id" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="service" id="serviceInput" value="">
+
+      <label for="name">Your Name</label>
+      <input type="text" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" name="email" required>
+
+      <label for="description">Describe Your Task</label>
+      <textarea name="description" rows="6" placeholder="Tell us what you need..." required></textarea>
+
+      <label for="file">Upload File (optional)</label>
+      <input type="file" name="attachment">
+
+      <button type="submit">Submit Request</button>
+    </form>
+
+    <div class="info-box" id="pricingBox">
+      <h3>Estimated Price & Delivery</h3>
+      <p><strong>Price:</strong> ₹1,999 – ₹4,999</p>
+      <p><strong>Delivery:</strong> 3 to 7 days</p>
+      <p><strong>Contact us:</strong> <a href="mailto:codewithpurpose.ai@gmail.com">codewithpurpose.ai@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>🌱 We support eco-startups and NGOs. 1% for Earth. 100% for impact.</p>
+    <p>&copy; 2025 CodeWithPurpose.ai – Built by Ashutosh with heart.</p>
+  </footer>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const service = urlParams.get('service');
+    const title = document.getElementById('serviceTitle');
+    const input = document.getElementById('serviceInput');
+    const pricingBox = document.getElementById('pricingBox');
+
+    const serviceDetails = {
+      datacleaning: {
+        name: "Data Cleaning",
+        price: "₹999 – ₹1,999",
+        time: "1 to 3 days"
+      },
+      webscraping: {
+        name: "Web Scraping & Automation",
+        price: "₹1,999 – ₹3,999",
+        time: "3 to 5 days"
+      },
+      dashboard: {
+        name: "Dashboard Creation",
+        price: "₹1,999 – ₹3,999",
+        time: "3 to 6 days"
+      },
+      visualization: {
+        name: "Data Visualization",
+        price: "₹1,499 – ₹2,999",
+        time: "2 to 4 days"
+      },
+      mlmodels: {
+        name: "ML Model Building",
+        price: "₹4,999 – ₹24,999",
+        time: "4 to 10 days"
+      },
+      emailcleanup: {
+        name: "Email List Cleanup",
+        price: "₹999 – ₹1,499",
+        time: "1 to 2 days"
+      },
+      exceltopowerbi: {
+        name: "Excel to Power BI Migration",
+        price: "₹1,499 – ₹2,999",
+        time: "2 to 4 days"
+      },
+      "eco-webscraping": {
+        name: "Eco-Business Web Scraping",
+        price: "₹999 – ₹1,999",
+        time: "2 to 4 days"
+      },
+      custom: {
+        name: "Custom Package",
+        price: "Starts at ₹1,999",
+        time: "Varies by need"
+      },
+      "eco-discount": {
+        name: "Eco-Business Discount",
+        price: "Contact us for quote",
+        time: "Based on project"
+      }
+    };
+
+    if (service && serviceDetails[service]) {
+      const details = serviceDetails[service];
+      title.textContent = `Request: ${details.name}`;
+      input.value = details.name;
+      pricingBox.innerHTML = `
+        <h3>Estimated Price & Delivery</h3>
+        <p><strong>Price:</strong> ${details.price}</p>
+        <p><strong>Delivery:</strong> ${details.time}</p>
+        <p><strong>Contact us:</strong> <a href="mailto:codewithpurpose.ai@gmail.com">codewithpurpose.ai@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+917390984955">+917390984955</a></p>
+      `;
+    }
+  </script>
+</body>
+</html>
