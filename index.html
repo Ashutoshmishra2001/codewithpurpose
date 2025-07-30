@@ -1,53 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CodeWithPurpose.ai – ML Services for All</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeWithPurpose.ai – ML for Everyone</title>
+    <link rel="stylesheet" href="style-modern.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Background Animations -->
+  <div class="bg-animation"></div>
+  <div class="neural-bg" id="neuralBg"></div>
 
-  <header>
-    <h1>CodeWithPurpose.ai</h1>
-    <p>Affordable ML, AI & Data Services for Everyone</p>
-    <nav>
-      <a href="#services">Services</a> |
-      <a href="#plans">Plans</a> |
-      <a href="#contact">Contact</a>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">CodeWithPurpose.ai</div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#plans" class="nav-link">Plans</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="services-grid">
-      <a class="cta" href="request.html?service=datacleaning">Data Cleaning</a>
-      <a class="cta" href="request.html?service=webscraping">Web Scraping</a>
-      <a class="cta" href="request.html?service=dashboard">Dashboard Creation</a>
-      <a class="cta" href="request.html?service=visualization">Data Visualization</a>
-      <a class="cta" href="request.html?service=mlmodels">ML Model Building</a>
-      <a class="cta" href="request.html?service=emailcleanup">Email Cleanup</a>
-      <a class="cta" href="request.html?service=exceltopowerbi">Excel → Power BI</a>
-      <a class="cta" href="request.html?service=eco-webscraping">Eco-Business Web Scraping</a>
-      <a class="cta" href="request.html?service=custom">Custom Package</a>
-      <a class="cta" href="request.html?service=eco-discount">Eco-Startup Discount 💚</a>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="floating-element floating-1"></div>
+    <div class="floating-element floating-2"></div>
+    <div class="floating-element floating-3"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">ML & AI Services for All</h1>
+      <p class="hero-subtitle">Affordable solutions for data cleaning, model building, dashboards, and more – built with purpose.</p>
+      <a href="#services" class="hero-cta">Explore Services →</a>
     </div>
   </section>
 
-  <section id="plans">
-    <h2>Pricing Plans</h2>
-    <div class="plans">
-      <div class="plan">
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="section-header reveal">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle">From raw data to real impact</p>
+    </div>
+
+    <div class="services-grid">
+      <a class="service-card reveal" href="request.html?service=datacleaning">🧹 Data Cleaning</a>
+      <a class="service-card reveal" href="request.html?service=webscraping">🌐 Web Scraping</a>
+      <a class="service-card reveal" href="request.html?service=dashboard">📊 Dashboard Creation</a>
+      <a class="service-card reveal" href="request.html?service=visualization">📈 Data Visualization</a>
+      <a class="service-card reveal" href="request.html?service=mlmodels">🤖 ML Model Building</a>
+      <a class="service-card reveal" href="request.html?service=emailcleanup">✉️ Email Cleanup</a>
+      <a class="service-card reveal" href="request.html?service=exceltopowerbi">🔄 Excel → Power BI</a>
+      <a class="service-card reveal" href="request.html?service=eco-webscraping">🌱 Eco-Web Scraping</a>
+      <a class="service-card reveal" href="request.html?service=custom">🛠️ Custom Package</a>
+      <a class="service-card reveal" href="request.html?service=eco-discount">💚 Eco-Startup Discount</a>
+    </div>
+  </section>
+
+  <!-- Plans Section -->
+  <section id="plans" class="services">
+    <div class="section-header reveal">
+      <h2 class="section-title">Pricing Plans</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
         <h3>Starter</h3>
         <p>₹999 – ₹1,999</p>
         <p>Basic data tasks or email cleanup</p>
       </div>
-      <div class="plan">
+      <div class="service-card reveal">
         <h3>Growth</h3>
         <p>₹2,000 – ₹4,999</p>
         <p>Scraping, dashboards, simple ML</p>
       </div>
-      <div class="plan">
+      <div class="service-card reveal">
         <h3>Pro</h3>
         <p>₹5,000+</p>
         <p>Advanced ML, AI automation, large projects</p>
@@ -55,18 +85,23 @@
     </div>
   </section>
 
-  <section id="contact">
-  <h2>Let’s Work Together</h2>
-  <p>Have a project? Need a dashboard? Want to try a model? Let's connect.</p>
-  <p><strong>Email:</strong> <a href="mailto:codewithpurpose.ai@gmail.com">codewithpurpose.ai@gmail.com</a></p>
-  <p><strong>Phone:</strong> <a href="tel:+91XXXXXXXXXX">+917390984955</a></p>
-</section>
-
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-content">
+      <div class="section-header reveal">
+        <h2 class="section-title">Let’s Work Together</h2>
+        <p class="section-subtitle">Have a project or idea? Let’s bring it to life.</p>
+        <p><strong>Email:</strong> <a href="mailto:codewithpurpose.ai@gmail.com">codewithpurpose.ai@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+917390984955">+91 73909 84955</a></p>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <p>🌱 We support eco-startups and NGOs. 1% for Earth. 100% for impact.</p>
     <p>&copy; 2025 CodeWithPurpose.ai – Built by Ashutosh with heart.</p>
   </footer>
 
+  <script src="scripts.js"></script>
 </body>
 </html>
